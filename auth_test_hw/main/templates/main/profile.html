@@ -1,0 +1,10 @@
+<!--% extends 'main/base.html' %} -->
+{% extends 'main/base.html' %}  <!-- Было: % extends ... -->
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+    <h1>Ваш профиль</h1>
+    <p>Имя пользователя: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+{% endblock %}
